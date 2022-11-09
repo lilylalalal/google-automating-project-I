@@ -7,7 +7,7 @@ def modifypic(pic,directory):
     #newpic = pic.replace("tiff", "jpeg")
     im=image.convert('RGB')
     new = im.rotate(90).resize((128,128))
-    return new.save("/opt/icons/"+"resized"+pic +'.jpeg')
+    return new.save("opt/"+"resized"+pic +'.jpeg')
 
 def picinfolder(directory):
     file = os.listdir(directory)
